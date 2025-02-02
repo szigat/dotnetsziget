@@ -8,7 +8,7 @@ draft: false
 author: Szigi
 category: "entity framework"
 tags: 
-  - "C#"
+  - "csharp"
   - "Entity Framework Core"
 ---
 

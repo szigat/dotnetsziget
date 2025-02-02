@@ -8,7 +8,7 @@ draft: false
 author: Szigi
 tags: 
   - "ASP .NET Core"
-  - "C#"
+  - "csharp"
 ---
 
 Alapértelmezetten egy Server bejegyzés kerül a response headerbe Az ASP .NET alkalmazások készításe és tesztelése során. Ez két féle módon történhet. Az egyik, hogy IIS alól futtatjuk és akkor az IIS (pipeline) teszi bele, a másik hogy az ASP .NET Core keretrendszernek köszönhetően kerül rá, amikor a Kestrelt használjuk. Ennek kiszedése sok helyen követelmény, mert információt adhat az alkalmazásról és a futtatókörnyezetről.

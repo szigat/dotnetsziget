@@ -9,6 +9,7 @@ tags:
   - "logging"
   - "serilog"
   - "sql"
+  - "csharp"
 featured: true
 draft: false
 author: Szigi

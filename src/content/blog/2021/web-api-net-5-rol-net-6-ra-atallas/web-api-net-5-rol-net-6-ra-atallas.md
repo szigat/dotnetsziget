@@ -10,7 +10,7 @@ category: "asp net"
 tags: 
   - "net-6"
   - "asp-net-core"
-  - "c"
+  - "csharp"
 ---
 
 Most, hogy megjelent a .NET 6 érdemes a folyamatban lévő, vagy meglévő .NET 5-ös projektek migrálásán elgondolkodni. Nézzük meg mivel is jár ez valójában!

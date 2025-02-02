@@ -11,6 +11,8 @@ tags:
   - "autofixture"
   - "bogus"
   - "nbuilder"
+  - "test"
+  - "unit test"
 ---
 
 Minden fejlesztő eljut oda, hogy egy funkció tesztelésekor jól jönne egy adag példány egy, vagy több osztályból. Ezen felül van amikor azt sem feltétlenül bánjuk ha ezeknek a tulajdonságai már rendelkeznek valamilyen alapértelmezettől eltérő értékkel (legyenek azok bármennyire is életszerűek). Három általam ismert library-t mutatok be erre, amik mind ugyanazt a célt szolgálják. Abc sorrendben az alábbiakról lesz szó: AutoFixture, Bogus és az NBuilder.

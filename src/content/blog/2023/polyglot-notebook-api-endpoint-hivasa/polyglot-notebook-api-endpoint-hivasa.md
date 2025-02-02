@@ -9,7 +9,7 @@ draft: false
 author: Szigi
 tags: 
   - ".NET Interactive"
-  - "C#"
+  - "csharp"
   - "notebook"
   - "polyglot"
   - "Visual Studio Code"
