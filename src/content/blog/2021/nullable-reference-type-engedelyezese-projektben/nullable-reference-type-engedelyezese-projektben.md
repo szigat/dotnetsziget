@@ -41,7 +41,7 @@ public class ClassB
 ```
 
 <figure>
-  ![](https://dotnetsziget.wordpress.com/wp-content/uploads/2021/07/image.png?w=696)
+  ![](./image.png)
 
   <figcaption>
     Possible null reference warning
@@ -63,7 +63,7 @@ A legegyszerűbb megoldás, hogy beállítjuk azt, hogy tekintse hibának tekint
 Látszólag sok változás nem történik ezután, ennek ellenére, ha megpróbáljuk buildelni, akkor hibát fog jelezni az output ablakban és ki is írja, hogy mi a gond.
 
 <figure>
-  ![](https://dotnetsziget.wordpress.com/wp-content/uploads/2021/07/image-1.png?w=1024)
+  ![](./image-1.png)
 
   <figcaption>
     Build failed result

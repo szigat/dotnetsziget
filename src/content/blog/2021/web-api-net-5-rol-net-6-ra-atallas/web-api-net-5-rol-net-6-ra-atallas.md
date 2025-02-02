@@ -47,7 +47,7 @@ Igazából az egyetlen fontos dolog, amin változtatni kell, hogy a TargetFramew
 
 A target framework beállítás még a projecten jobb klikk Propertiesre kattintás után is megváltoztatható:
 
-![](https://dotnetsziget.wordpress.com/wp-content/uploads/2021/12/image-1.png?w=1024)
+![](./image-1.png)
 
 ## Továbbiak (program.cs és startup.cs)
 

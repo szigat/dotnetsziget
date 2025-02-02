@@ -26,7 +26,7 @@ static void Main(string[] args)
 }
 ```
 
-![figlet hello world](https://dotnetsziget.wordpress.com/wp-content/uploads/2021/09/image.png?w=798)
+![figlet hello world](./image.png)
 
 Az AnsiConsole osztály fogjuk a legtöbbször használni. Ezen keresztül érhető el minden, amire szükségünk van. Példának nézzük meg, hogy egy egyszerű szöveg egy részének a formázása mennyire egyszerű. Ehhez csak szögletes zárójelben meg kell jelölni a kívánt formázást majd a formázást zárni kel, ott ahol szeretnénk a "\[/\]" karakterekkel (a dokumentáció alapján könnyen elsajátítható).
 
@@ -34,13 +34,13 @@ Az AnsiConsole osztály fogjuk a legtöbbször használni. Ezen keresztül érhe
 AnsiConsole.MarkupLine("[underline red]Hello[/] Installer!");
 ```
 
-![spectre markup line "hello installer" example](https://dotnetsziget.wordpress.com/wp-content/uploads/2021/09/image-3.png?w=596)
+![spectre markup line "hello installer" example](./image-3.png)
 
 ## Csak egyet szeretnék
 
 Készítsünk most egy olyan megoldást, ahol több objektum közül lehet választani. A következő képen látható az envoironment osztály. A példa környezetek DEV1-től négyig vannak és utána még jön a DEV\_TEST, UAT és a PROD.
 
-![example environment class ](https://dotnetsziget.wordpress.com/wp-content/uploads/2021/09/image-2.png?w=710)
+![example environment class ](./image-2.png)
 
 Az alábbi kóddal jeleníthetjük meg console-on választható formában őket:
 
@@ -55,7 +55,7 @@ Environment selectedEnvironment = AnsiConsole.Prompt(
     );
 ```
 
-![spectre selection prompt result](https://dotnetsziget.wordpress.com/wp-content/uploads/2021/09/image-4.png?w=1024)
+![spectre selection prompt result](./image-4.png)
 
 Generikusban megadtam a típust, majd a UseConverterben egy olyan functiont, ami stringet ad vissza (jelen esetben a nevét). Ez fog majd megjelenni a felületen. Utána beállítottam egy lap méretet, ami megadja, hogy egyszerre hány választható elem látszódjon és milyen szöveg jelenjen meg az alján. Végül a választható elemek átadása látható.
 
@@ -76,7 +76,7 @@ Environment.GetEnvironments().ToList()
 AnsiConsole.Render(table);
 ```
 
-![spectre table result](https://dotnetsziget.wordpress.com/wp-content/uploads/2021/09/image-5.png?w=367)
+![spectre table result](./image-5.png)
 
 ## Exception string másképpen
 
@@ -117,7 +117,7 @@ catch(Exception ex)
 }
 ```
 
-![spectre exception output results](https://dotnetsziget.wordpress.com/wp-content/uploads/2021/09/image-6.png?w=1024)
+![spectre exception output results](./image-6.png)
 
 Az első különbség, ami feltűnik, az a színezés. Kiemeli a hibaüzenetet és azt is, hogy milyen metódusban és hol dobódott a kivétel. Utána láthatóak a különböző ExceptionFormat beállítások hatásai. Ezek között mindenféle rövidítési lehetőség van (metódus rövidítés, típus rövidítés, útvonal rövidítés és ezek kombinációja), ami által még olvashatóbb lehet egy hibaüzenet.
 

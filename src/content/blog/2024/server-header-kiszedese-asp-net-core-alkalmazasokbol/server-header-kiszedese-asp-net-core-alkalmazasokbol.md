@@ -13,7 +13,7 @@ tags:
 
 Alapértelmezetten egy Server bejegyzés kerül a response headerbe Az ASP .NET alkalmazások készításe és tesztelése során. Ez két féle módon történhet. Az egyik, hogy IIS alól futtatjuk és akkor az IIS (pipeline) teszi bele, a másik hogy az ASP .NET Core keretrendszernek köszönhetően kerül rá, amikor a Kestrelt használjuk. Ennek kiszedése sok helyen követelmény, mert információt adhat az alkalmazásról és a futtatókörnyezetről.
 
-![Kestrel response headers](https://dotnetsziget.wordpress.com/wp-content/uploads/2024/05/image.png?w=478)
+![Kestrel response headers](./image.png)
 
 Kestrel esetén könnyű dolgunk van csak a WebApplicationBuilder objektumon kell az alábbi kóddal beállítani a kívánt működést:
 

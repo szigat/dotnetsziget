@@ -40,13 +40,13 @@ Nézzük sorra a paramétereket:
 
 Ezt lefuttatva nincs más dolgunk mint elnavigálni a megadott címre és első alkalommal egy admin (alapértelmezetten admin) jelszó megváltoztatása után a projektet létrehozni és az ott kapott azonosítót felírni.
 
-![SonarQube login page](https://dotnetsziget.wordpress.com/wp-content/uploads/2023/03/msedge_ampgsvhxct.png?w=1024)
+![SonarQube login page](./msedge_ampgsvhxct.png)
 
-![create SonarQube project manually](https://dotnetsziget.wordpress.com/wp-content/uploads/2023/03/xwbz1myycd.png?w=1024)
+![create SonarQube project manually](./xwbz1myycd.png)
 
-![Create example project](https://dotnetsziget.wordpress.com/wp-content/uploads/2023/03/msedge_tguxep6egv.png?w=1024)
+![Create example project](./msedge_tguxep6egv.png)
 
-![Run analysis steps](https://dotnetsziget.wordpress.com/wp-content/uploads/2023/03/msedge_nbs2eg5dra.png?w=1024)
+![Run analysis steps](./msedge_nbs2eg5dra.png)
 
 ## .NET Projekt vizsgálata:
 
@@ -68,7 +68,7 @@ dotnet sonarscanner end /d:sonar.login="{kapott azonosító}"
 
 Ezután a projekt oldalán már látható lesz az elemzés eredménye:
 
-![Analysis example](https://dotnetsziget.wordpress.com/wp-content/uploads/2023/03/msedge_93j6rojdrj.png?w=1024)
+![Analysis example](./msedge_93j6rojdrj.png)
 
 Nem maradt más hátra, mint megnézni mi mindent talált nekünk a SonarQube.
 

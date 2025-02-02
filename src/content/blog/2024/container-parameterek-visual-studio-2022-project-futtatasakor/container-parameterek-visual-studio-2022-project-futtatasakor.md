@@ -15,8 +15,7 @@ tags:
 
 A Visual Studio 2022 segítségével könnyen készíthetünk docker filet ASP .NET Core alkalmazásunkhoz. Ehhez csak jobb klikk a projekten add menüpont majd Docker Support kiválasztása. Ez elkészíti a docker fájlunkat és elhelyez egy containeres futtatáshoz szükséges bejegyzést a launchSettings.json fájlban (és kapunk egy .dockerignore fájlt is, de ez most nem lényeges). Ezután már fent a menüsorban kiválasztható, hogy a projektet konténert használva szeretnénk indítani.
 
-<!-- ![container run button in visual studio](https://dotnetsziget.wordpress.com/wp-content/uploads/2024/03/image.png?w=266) -->
-![container run button in visual studio](../../../assets/images/blog/2024/image.png)
+![container run button in visual studio](./image.png)
 
 Debugban elindítva működik a breakpoint elhelyezés és könnyen felmerülhet a kérdés, hogy de miért is van ez így, amikor a dockerfileban nincs semmi, ami ezt indokolná. A megoldás természetesen nem bonyolult és ahogyan sejteni lehet a docker run paraméterek között lesz a megoldás. Az említett esetben az alábbi docker run utasítás hajtódik végre:
 

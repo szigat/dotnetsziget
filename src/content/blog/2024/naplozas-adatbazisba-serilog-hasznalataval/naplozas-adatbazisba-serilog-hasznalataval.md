@@ -57,7 +57,7 @@ app.MapGet("/weatherforecast", (ILogger<Program> logger) =>
 .WithOpenApi();
 ```
 
-![](https://dotnetsziget.wordpress.com/wp-content/uploads/2024/07/image.png?w=880)
+![](./image.png)
 
 A kód futtatása után a fenti eredmény látható. Most már működik is a Console-ra naplózás.
 
@@ -101,7 +101,7 @@ Log.Logger = new LoggerConfiguration()
 
 Futtasuk az alkalmazást, hívjuk meg a végpontot és ha minden jól lett beállítva akkor a lenti képhez hasonló eredmény lesz látható a táblában.
 
-![](https://dotnetsziget.wordpress.com/wp-content/uploads/2024/07/image-1.png?w=1024)
+![](./image-1.png)
 
 ## További oszlopok hozzáadása
 
@@ -132,7 +132,7 @@ Log.Logger = new LoggerConfiguration()
         .CreateLogger();
 ```
 
-![](https://dotnetsziget.wordpress.com/wp-content/uploads/2024/07/image-3.png?w=1024)
+![](./image-3.png)
 
 Az egész úgy működik, hogy amennyiben a property neve megegyezik a column nevével, akkor a fent látható módon tudja tölteni. Abban az esetben, ha a kettő eltér, akkor sincs probléma, csupán az a fontos, hogy a SqlColumn objektumunk PropertyName tulajdonsága is ki legyen töltve. Innentől kezdve bármi, ami bekerül a properties közé, akár külön oszlopba is tehetün. Az enricherekkel kombinálva bármilyen információt kirakhatunk.
 

@@ -15,7 +15,7 @@ Egy törölt fájl visszaállítását mutatom most be Git verziókezelő segít
 
 <figure>
 
-![](https://dotnetsziget.wordpress.com/wp-content/uploads/2021/09/image-7.png?w=319)
+![](./image-7.png)
 
 <figcaption>
 
@@ -41,4 +41,4 @@ git checkout 509c089cd4e6c5628a2558f83ed97790efee5552^ -- information/Informatio
 
 Amire fontos figyelni, az a kis kalap jel a hash végén. Annak segítségével jelezzük, hogy nem az adott commitból kérjük le a fájlt (annak a commitnak már nem része, hiszen töröltük), hanem a szülőjétől (a korábbiból). Innentől már nincs is más dolgunk, csak annyi, hogy újra beadjuk a fájlt.
 
-![](https://dotnetsziget.wordpress.com/wp-content/uploads/2021/09/image-8.png?w=357)
+![](./image-8.png)

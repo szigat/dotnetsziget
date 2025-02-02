@@ -40,4 +40,4 @@ Console.WriteLine(formattedJson);
 
 Végül az alábbi képen látható, hogy a kódblokk és az output hogyan néz ki Visual Studio Code-ban:
 
-![Kép a Polyglot notebook fájlban látható kódról és a futás eredményéről](https://dotnetsziget.wordpress.com/wp-content/uploads/2023/06/image-3.png?w=846)
+![Kép a Polyglot notebook fájlban látható kódról és a futás eredményéről](./image-3.png)
