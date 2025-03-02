@@ -1,9 +1,9 @@
 import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
-  website: "https://astro-paper.pages.dev/", // replace this with your deployed domain
+  website: "https://dotnetsziget.dev/", // replace this with your deployed domain
   author: "Attila Szigeti",
-  profile: "https://satnaing.dev/",
+  profile: "https://dotnetsziget.dev/about",
   desc: "Egy blog, amely lefedi a .NET fejlesztés minden területét: ASP.NET, C#, unit tesztelés és sok más téma.",
   title: ".NET Sziget",
   ogImage: "",
