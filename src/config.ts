@@ -14,9 +14,10 @@ export const SITE: Site = {
   showArchives: true,
   showFeatured: false,
   editPost: {
-    url: "https://github.com/satnaing/astro-paper/edit/main/src/content/blog",
+    // url: "https://github.com/satnaing/astro-paper/edit/main/src/content/blog",
+    url: "",
     text: "Suggest Changes",
-    appendFilePath: true,
+    appendFilePath: true
   },
 };
 
