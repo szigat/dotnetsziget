@@ -21,7 +21,7 @@ A Serilog csomagot sokan ismerhetik. Röviden, a fő jellemzője a strukturált 
 
 Kiindulási pontnak az alap asp.net core web api projektet veszem. Első lépésnek adjuk hozzá a szükséges NuGet csomagokat a projektünkhöz:
 
-```
+``` csharp
 Serilog
 Serilog.AspNetCore
 ```
@@ -38,7 +38,7 @@ builder.Services.AddSerilog();
 
 Még vegyünk fel egy naplózást a jól ismert weatherforecast végponthoz tartozó metóduunkba:
 
-```
+``` csharp
 app.MapGet("/weatherforecast", (ILogger<Program> logger) =>
 {
     var forecast = Enumerable.Range(1, 5).Select(index =>
@@ -72,7 +72,7 @@ Serilog.Sinks.MSSqlServer
 
 Szükségünk lesz ezenkívül egy adatbázis táblára, ahova naplózhatunk. Ez megtalálható a sink github oldalán is.
 
-```
+``` sql
 CREATE TABLE [Logs] (
 
    [Id] int IDENTITY(1,1) NOT NULL,
@@ -91,7 +91,7 @@ Lehetőség van ezt automatikusan is létrehozni a sinkOptions AutoCreateSqlTabl
 
 Már csak a konfiguráció van hátra, és készen is vagyunk. Bővítsük ki a korábban megírt részt, hogy az alábbi eredményt lássuk:
 
-```
+``` csharp
 Log.Logger = new LoggerConfiguration()
         .WriteTo.Console()
         .WriteTo.MSSqlServer(
@@ -110,14 +110,14 @@ Kiindulásnak nem rossz a fenti eredmény, de előfordulhat, hogy szeretnénk va
 
 Vegyük példának a request id tulajdonságot. Először az SQL táblánkat bővítsük ki az alábbi scripttel.
 
-```
+``` SQL
 ALTER TABLE dbo.Logs ADD
 	RequestId nvarchar(36) NULL
 ```
 
 Még a Serilog beállításainkat szükséges módosítani. Az adatbázis tábla szerkezetének változtatásához columnOptions megfelelő paraméterezése szükséges.
 
-```
+``` csharp
 Log.Logger = new LoggerConfiguration()
         .WriteTo.Console()
         .WriteTo.MSSqlServer(
@@ -141,14 +141,14 @@ Az egész úgy működik, hogy amennyiben a property neve megegyezik a column ne
 
 Megint előszőr a táblát módosítsuk.
 
-```
+``` SQL
 ALTER TABLE dbo.Logs ADD
 	LogEvent nvarchar(MAX) NULL
 ```
 
 Utána meg a konfigurációs kódunkat, némileg átalakítva a korábbihoz képest.
 
-```
+``` csharp
 var columnOptions = new ColumnOptions()
 {
     AdditionalColumns = [
@@ -169,7 +169,7 @@ Log.Logger = new LoggerConfiguration()
 
 Az adatbázos tábla LogEvent oszlopában például ilyet láthatunk:
 
-```
+``` json
 {
   "TimeStamp": "2024-07-27T21:23:02.9058589",
   "Level": "Information",
@@ -187,7 +187,7 @@ Az adatbázos tábla LogEvent oszlopában például ilyet láthatunk:
 
 Egy valódi rendszer esetében könnyen lehet szűrni például arra, hogy a weather forecast count hol nagyobb, mint 5.
 
-```
+``` sql
 SELECT [Message],
 	[TimeStamp],
 	JSON_VALUE(LogEvent, '$.Properties.count') AS WeatherForecastCount
@@ -201,7 +201,7 @@ A naplózással kapcsolatban rugalmasabbak lehetünk akkor, ha ezt az egészet �
 
 Módosítsuk a program.cs fájlban a Serilog beállítását:
 
-```
+``` csharp
 Log.Logger = new LoggerConfiguration()
         .ReadFrom.Configuration(builder.Configuration)
         .CreateLogger();
@@ -209,7 +209,7 @@ Log.Logger = new LoggerConfiguration()
 
 Végül az appsettings.json fájlban rakjuk össze a korábbi beállítás megfelelőjét
 
-```
+``` json
   "Serilog": {
     "Using": [
       "Serilog.Sinks.Console",

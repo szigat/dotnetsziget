@@ -19,7 +19,7 @@ A Visual Studio 2022 segítségével könnyen készíthetünk docker filet ASP .
 
 Debugban elindítva működik a breakpoint elhelyezés és könnyen felmerülhet a kérdés, hogy de miért is van ez így, amikor a dockerfileban nincs semmi, ami ezt indokolná. A megoldás természetesen nem bonyolult és ahogyan sejteni lehet a docker run paraméterek között lesz a megoldás. Az említett esetben az alábbi docker run utasítás hajtódik végre:
 
-```
+``` powershell 
 docker run -dt -v "C:\Users\*****\vsdbg\vs2017u5:/remote_debugger:rw" 
 -v "C:\Users\*****\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro" 
 -v "C:\Users\*****\AppData\Roaming\Microsoft\UserSecrets:/home/app/.microsoft/usersecrets:ro" 
@@ -43,7 +43,7 @@ Ezt a build output ablakban lehet megtalálni. A lényeg, hogy azért működik 
 
 Ezeket a paramétereket módosítani (a bejegyzés írásának pillanatában, ha jól tudom) nem lehet, de továbbiakat hozzá lehet adni. Ezt legkönnyebben úgy tehetjük meg, hogy a launchSettings.json fájlt megnyitjuk és egy dockerfileRunArguments tulajdonságban megadjuk a docker run paramétereket, amiket használni szeretnénk.
 
-```
+``` json
 "DEBUG Container (Dockerfile)": {
   "commandName": "Docker",
   "launchBrowser": true,
