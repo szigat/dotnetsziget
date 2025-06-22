@@ -79,6 +79,15 @@ A teszt rendben lefut és teszi a dolgát.
 
 Amint megnézzük a Test Detail Summary ablakot látni fogjuk a teszt eredményét és hogy mennyi idő alatt is futott le, de ha érdekelne minket, hogy a logger mit is ír ki azt nem jeleníti meg. Ez azért van, mert a logger nincs rákötve az xUnit outputjára, ami a ITestOutputHelper segítségével érhető el.
 
-Ilyenkor jön a kérdés hogy mit lehet tenni? Az egyik amire gondolni szoktak, hogy írok egy mockot az ILoggerre és majd azt fogom használni. Ez is egy járható út. Lehet írni saját kiegészítőt is az ILogger és az ILoggerProvider interfészek használatával.
+Ilyenkor jön a kérdés hogy mit lehet tenni? Az egyik amire gondolni szoktak, hogy írok egy mockot az ILoggerre és majd azt fogom használni. Ez is egy járható út. Lehet írni saját kiegészítőt is az ILogger és az ILoggerProvider interfészek használatával. Én egy NuGet csomagot használok erre és ennek segítségével nem kell már ezzel foglalkozni. ( Itt jegyezném meg, hogy ha elégedet vagy más által írt megoldással egy github csillag adása semmi be sem kerül :). )
+
+Az alábbi nuget csomagra lesz szükségünk: `  `
+
+Miután letöltöttük nincs más hátra mint, hogy injektáljuk az ITestOutputHelper intrefészt és átírjuk logger példány előállítását, ami után az alábbi módon fog kinézni a korábban megmutatott teszt kódja:
+
+``` csharp
+```
+
+Most már a tesztet megfuttatva a teszt output ablakában látunk mindent.
 
 ![test-output-withlog.png](./test-output-withlog.png)
