@@ -1,12 +1,12 @@
 ---
 layout: ../layouts/AboutLayout.astro
-title: "About"
+title: "Rólam"
 ---
 
-## ÃœdvÃ¶zÃ¶llek a .NET Sziget blogon
+## Üdvözöllek a .NET Sziget blogon
 
-Szia, Szigeti Attila vagyok, egy elhivatott .NET fejlesztÅ‘, aki szÃ©leskÃ¶rÅ± tapasztalattal rendelkezik a C# Ã©s az ASP.NET terÃ¼letÃ©n. MunkÃ¡m sorÃ¡n a feladatom C# Ã©s az ASP.NET alapÃº rendszerek tervezÃ©se Ã©s implementÃ¡lÃ¡sa. TÃ¶rekszem a tiszta, kÃ¶nnyen karbantarthatÃ³ kÃ³d Ã­rÃ¡sÃ¡ra, Ã©s folyamatosan fejlesztem tudÃ¡somat, hogy megprÃ³bÃ¡ljak lÃ©pÃ©st tartani a technolÃ³giai fejlÅ‘dÃ©ssel.
+Szia, Szigeti Attila vagyok, egy elhivatott .NET fejlesztõ, aki széleskörû tapasztalattal rendelkezik a C# és az ASP.NET területén. Munkám során a feladatom modern, jól skálázható rendszerek tervezése és implementálása. Törekszem a tiszta, könnyen karbantartható kód írására, és folyamatosan fejlesztem tudásomat, hogy lépést tartsak a technológiai fejlõdéssel.
 
-Szeretek csapatban dolgozni, ahol az egyÃ¼ttmÅ±kÃ¶dÃ©s Ã©s a folyamatos tanulÃ¡s inspirÃ¡l. Ezt a blogot azÃ©rt hoztam lÃ©tre, hogy megosszam tapasztalataimat a .NET fejlesztÃ©ssel kapcsolatban. RemÃ©lem, talÃ¡lsz itt szÃ¡modra Ã©rtÃ©kes tartalmat.
+Szeretek csapatban dolgozni, ahol az együttmûködés és a folyamatos tanulás inspirál. Ezt a blogot azért hoztam létre, hogy megosszam tapasztalataimat a .NET fejlesztéssel kapcsolatban. Remélem, találsz itt számodra értékes tartalmat.
 
-KÃ¶szÃ¶nÃ¶m, hogy benÃ©ztÃ©l!
+Köszönöm, hogy benéztél!
