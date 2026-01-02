@@ -4,7 +4,7 @@ description: 'A Visual Studio 2022 segítségével könnyen készíthetünk dock
 pubDatetime: 2024-03-09
 slug: container-parameterek-visual-studio-2022-project-futtatasakor
 category: "asp net"
-featured: true
+featured: false
 draft: false
 author: Szigi
 tags: 

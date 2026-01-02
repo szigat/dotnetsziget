@@ -10,7 +10,7 @@ tags:
   - "serilog"
   - "sql"
   - "csharp"
-featured: true
+featured: false
 draft: false
 author: Szigi
 ---

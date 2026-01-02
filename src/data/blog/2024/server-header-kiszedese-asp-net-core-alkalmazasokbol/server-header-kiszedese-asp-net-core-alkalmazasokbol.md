@@ -3,7 +3,7 @@ title: "Server header kiszedése ASP .NET Core alkalmazásokból"
 slug: server-header-kiszedese-asp-net-core-alkalmazasokbol
 description: 'Alapértelmezetten a Server bejegyzés jelenik meg a response headerben az ASP .NET alkalmazások esetében. IIS és Kestrel használatakor eltávolíthatjuk, hogy kevesebb információt adjunk az alkalmazásról.'
 pubDatetime: 2024-05-04
-featured: true
+featured: false
 draft: false
 author: Szigi
 tags: 

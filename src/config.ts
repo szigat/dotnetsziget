@@ -13,7 +13,7 @@ export const SITE = {
   showBackButton: true, // show back button in post detail
   showFeatured: false,
   editPost: {
-    enabled: true,
+    enabled: false,
     text: "Edit page",
     url: "",
   },
@@ -22,3 +22,10 @@ export const SITE = {
   lang: "hu", // html lang code. Set this empty and default will be "en"
   timezone: "Europe/Budapest", // Default global timezone (IANA format) https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 } as const;
+
+export const LOGO_IMAGE = {
+  enable: true,
+  svg: false,
+  width: 32,
+  height: 32,
+};

@@ -7,7 +7,7 @@ import IconArchive from "@/assets/icons/IconArchive.svg";
 import IconSunHigh from "@/assets/icons/IconSunHigh.svg";
 import IconMenuDeep from "@/assets/icons/IconMenuDeep.svg";
 import LinkButton from "./LinkButton.astro";
-import { SITE } from "@/config";
+import { SITE, LOGO_IMAGE } from "@/config";
 
 const { pathname } = Astro.url;
 
@@ -43,7 +43,17 @@ const isActive = (path: string) => {
         href="/"
         class="absolute py-1 text-xl leading-8 font-semibold whitespace-nowrap sm:static sm:my-auto sm:text-2xl sm:leading-none"
       >
-        {SITE.title}
+        {
+          LOGO_IMAGE.enable ? (
+            <img
+              src={`/assets/${LOGO_IMAGE.svg ? "logo.svg" : "logo.png"}`}
+              alt={SITE.title}
+              style={`height: ${LOGO_IMAGE.height}px; width:${LOGO_IMAGE.width}px;`}
+            />
+          ) : (
+            SITE.title
+          )
+        }
       </a>
       <nav
         id="nav-menu"
