@@ -1,23 +1,24 @@
 export const SITE = {
-  website: "https://astro-paper.pages.dev/", // replace this with your deployed domain
-  author: "Sat Naing",
-  profile: "https://satnaing.dev/",
-  desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
-  title: "AstroPaper",
-  ogImage: "astropaper-og.jpg",
+  website: "https://dotnetsziget.dev/", // replace this with your deployed domain
+  author: "Attila Szigeti",
+  profile: "https://dotnetsziget.dev/about",
+  desc: "Gyakorlati tapasztalatok és megoldások a .NET fejlesztés világából – C#, ASP.NET, unit tesztelés és még sok más.",
+  title: ".NET Sziget",
+  ogImage: "",
   lightAndDarkMode: true,
-  postPerIndex: 4,
-  postPerPage: 4,
+  postPerIndex: 5,
+  postPerPage: 5,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
   showArchives: true,
   showBackButton: true, // show back button in post detail
+  showFeatured: false,
   editPost: {
     enabled: true,
     text: "Edit page",
-    url: "https://github.com/satnaing/astro-paper/edit/main/",
+    url: "",
   },
   dynamicOgImage: true,
   dir: "ltr", // "rtl" | "auto"
-  lang: "en", // html lang code. Set this empty and default will be "en"
-  timezone: "Asia/Bangkok", // Default global timezone (IANA format) https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  lang: "hu", // html lang code. Set this empty and default will be "en"
+  timezone: "Europe/Budapest", // Default global timezone (IANA format) https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 } as const;

@@ -3,35 +3,12 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-AstroPaper is a minimal, accessible and SEO-friendly blog theme built with [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/).
+## Üdvözöllek a .NET Sziget blogon
 
-![Astro Paper](public/astropaper-og.jpg)
+Szia, Szigeti Attila vagyok, elhivatott .NET fejlesztő. Főként C# és ASP.NET alapú rendszerek tervezésével és fejlesztésével foglalkozom, ahol kiemelten fontos számomra a tiszta, jól karbantartható kód. Hiszek abban, hogy a minőségi szoftver hosszú távon időt és energiát spórol, ezért folyamatosan fejlesztem a tudásomat, hogy lépést tartsak a technológia fejlődésével.
 
-AstroPaper provides a solid foundation for blogs, or even portfolios\_ with full markdown support, built-in dark mode, and a clean layout that works out-of-the-box.
+Szeretek csapatban dolgozni, ahol az együttműködés és a folyamatos tanulás természetes része a mindennapoknak. Ezt a blogot azért hoztam létre, hogy megosszam tapasztalataimat, gondolataimat és gyakorlati példáimat a .NET fejlesztés világából.
 
-The blog posts in this theme also serve as guides, docs or example articles\_ making AstroPaper a flexible starting point for your next content-driven site.
+Remélem, találsz itt hasznos és inspiráló tartalmat.
 
-## Features
-
-AstroPaper comes with a set of useful features that make content publishing easy and effective:
-
-- SEO-friendly
-- Fast performance
-- Light & dark mode
-- Highly customizable
-- Organizable blog posts
-- Responsive & accessible
-- Static search with [PageFind](https://pagefind.app/)
-- Automatic social image generation
-
-and so much more.
-
-## Show your support
-
-If you like [AstroPaper](https://github.com/satnaing/astro-paper), consider giving it a star ⭐️.
-
-Found a bug 🐛 or have an improvement ✨ in mind? Feel free to open an [issue](https://github.com/satnaing/astro-paper/issues), submit a [pull request](https://github.com/satnaing/astro-paper/pulls) or start a [discussion](https://github.com/satnaing/astro-paper/discussions).
-
-If you find this theme helpful, you can also [sponsor me on GitHub](https://github.com/sponsors/satnaing) or [buy me a coffee](https://buymeacoffee.com/satnaing) to show your support — every penny counts.
-
-Kyay zuu! 🙏🏼
+Köszönöm, hogy benéztél!
