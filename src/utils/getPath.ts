@@ -31,6 +31,7 @@ export function getPath(
   if (!pathSegments || pathSegments.length < 1) {
     return [basePath, slug].join("/");
   }
-
-  return [basePath, ...pathSegments, slug].join("/");
+  
+  //return [basePath, ...pathSegments, slug].join("/");
+  return [basePath, slug].join("/");
 }
