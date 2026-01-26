@@ -1,5 +1,5 @@
 ---
-title: "Containerben futó SQL Server Migrálása"
+title: "Containerben futó SQL Server migrálása"
 slug: containerben-futo-sql-server-migralasa
 description: 'SQL Server 2019 -> 2022 frissítés Docker Compose-ban bind mountolt data mappával: mentés, image csere, indítás és ellenőrzés.'
 pubDatetime: 2026-01-26T22:12:00
@@ -28,7 +28,7 @@ A docker compose fájlom így nézett ki:
 ``` yaml
 version: '3.9'
 services:
-  ifrcsqlserver:
+  sqlserver:
     image: mcr.microsoft.com/mssql/server:2019-latest
     cpus: 2.0
     mem_limit: 4G
@@ -54,7 +54,7 @@ Ezután átírtam a docker compose fájlomat, hogy az SQL Server 2022 latest ima
 ``` yaml
 version: '3.9'
 services:
-  ifrcsqlserver:
+  sqlserver:
     image: mcr.microsoft.com/mssql/server:2022-latest
     cpus: 2.0
     mem_limit: 4G
