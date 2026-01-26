@@ -90,7 +90,7 @@ Végül ellenőriztem, hogy tudok kapcsolódni a szerverhez és minden ugyanúgy
 ### Amit még érdemes megemlíteni
 
 - A 2022-re frissített adatfájlokkal a 2019-es SQL Server konténer már nem fog elindulni.
-- A régi adatbázisok kompatibilitási szintje maradt a régi `SQL Server 2019 (150)`
+- A régi adatbázisok kompatibilitási szintje: `SQL Server 2019 (150)`
   
 ![dbpropertieswindow.png](./dbpropertieswindow.png)
 
