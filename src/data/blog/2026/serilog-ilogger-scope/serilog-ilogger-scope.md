@@ -16,7 +16,9 @@ tags:
 
 ## Serilog és az ILogger Scope
 
-A BeginScope metódus segítségével hozhatunk létre egy 
+Nemrégen megkérdezték tőlem, mi történik, ha egy ILogger scope-ot használunk Seriloggal, hogyan jeleníthető meg a scope információ a naplóbejegyzésekben és MS SQL Server adatbázisban. Nézzük meg, hogyan működik ez a gyakorlatban.
+
+A korábbi naplózási [példából](./naplozas-adatbazisba-serilog-hasznalataval) indulok ki, ahol egy egyszerű ASP.NET Core web API projektben Serilogot használtunk naplózásra. Ehhez adtam hozzá scope-okat (azonnal kettőt), hogy lássuk egyből milyen hatással van a naplóbejegyzésekre.
 
 ``` csharp
 app.MapGet("/weatherforecast", (ILogger<Program> logger) =>
@@ -40,6 +42,30 @@ app.MapGet("/weatherforecast", (ILogger<Program> logger) =>
 })
 .WithName("GetWeatherForecast");
 ```
+
+### Console kimenet
+
+Először nézzük meg a konzol kimenetet. Ehhez szükséges még egy módosítás a Serilog konfigurációban, hogy megjelenítse a scope információt a naplóbejegyzésekben:
+
+``` json
+ /// ...
+ "WriteTo": [
+    {
+      "Name": "Console",
+      "Args": {
+        "outputTemplate": "[{Timestamp:HH:mm:ss} {Level:u3}] {Scope} - {Message}{NewLine}{Exception}"
+      }
+    },
+    // ...
+```
+
+A konzol kimenetben látható, hogy a scope információ megjelenik a naplóbejegyzésekben. Az első log üzenet csak a "WeatherForecastScope" scope-ot tartalmazza, míg a második log üzenet mindkét scope-ot ("WeatherForecastScope" és "InnerWeatherForecastScope") megjeleníti.
+
+![console output with scope](consoleoutputwithscope.png)
+
+### Adatbázis kimenet
+
+Mindenféle beállítás nélkül a scope információ a Properties sql oszlopben található meg. Mutatom is, hogyan néz ki:
 
 ``` xml
 <properties>
@@ -66,6 +92,8 @@ app.MapGet("/weatherforecast", (ILogger<Program> logger) =>
 </properties>
 ```
 
+Ez nehezen szűrhető és olvasható, de a korábbi példámban megmutattam hogyan lehet json formátumban is tárolni a serilog által naplózott adatokat. Ilyenkor ebbe a mezőbe is bekerül a Scope információ, ami egy json tömbként jelenik meg.
+
 ``` json
 {
   "TimeStamp": "2026-02-15T18:51:25.0577241",
@@ -86,12 +114,26 @@ app.MapGet("/weatherforecast", (ILogger<Program> logger) =>
 }
 ```
 
-![console output with scope](consoleoutputwithscope.png)
+Természetesen a Scope információt külön oszlopban is tárolhatjuk, ehhez szükséges egy új oszlop hozzáadása a Log táblához.
 
 ``` sql
 ALTER TABLE dbo.Logs 
 ADD Scope nvarchar(MAX) NULL
 ```
+
+Ezután a Serilog konfigurációban meg kell adni, hogy a Scope információ külön oszlopba kerüljön. Ehhez az additionalColumns beállításban helyezzük el az alábbi konfigurációt.
+
+``` json
+{
+  "ColumnName": "Scope",
+  "DataType": "nvarchar",
+  "DataLength": -1
+}
+```
+
+A beállítás után a Scope információ külön oszlopban jelenik meg az adatbázisban, ami könnyebben szűrhető és olvasható.
+
+![log table rows](log-table-rows.png)
 
 ``` json
 [
@@ -99,6 +141,8 @@ ADD Scope nvarchar(MAX) NULL
   "InnerWeatherForecastScope"
 ]
 ```
+
+### A teljes konfiguráció
 
 ``` json
 "Serilog": {
@@ -150,4 +194,7 @@ ADD Scope nvarchar(MAX) NULL
 }
 ```
 
-![log table rows](log-table-rows.png)
+### Amit még érdemes megemlíteni
+
+Csak a paraméterezéskor használt érték kerül át a Scope információba.
+Amennyiben a `state` paraméternek komplex ért
