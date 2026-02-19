@@ -196,5 +196,4 @@ A beállítás után a Scope információ külön oszlopban jelenik meg az adatb
 
 ### Amit még érdemes megemlíteni
 
-Csak a paraméterezéskor használt érték kerül át a Scope információba.
-Amennyiben a `state` paraméternek komplex ért
+A fenti példa csak abban az esetben működik, ha a `BeginScope` paraméter nem `Dictionary<string, object>`, `KeyValuePair<string, object>`, vagy `Tuple<string, object>` típusú. Bármilyen más típusú paraméter esetén a paraméter `ToString()` értéke kerül a Scope mezőbe. A korábbi paraméterek esetében nem kerülnek be a Scope mezőbe, de a string kulccsal hozzáférhetővé válnak a naplóbejegyzésekben.
