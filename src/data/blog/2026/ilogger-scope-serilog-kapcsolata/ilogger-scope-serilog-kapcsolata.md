@@ -18,9 +18,13 @@ tags:
 
 Nemrég megkérdezték tőlem, mi történik, ha egy `ILogger` scope-ot használunk Seriloggal, hogyan jeleníthető meg a scope információ a naplóbejegyzésekben, akár MS SQL Szerverbe történő naplózáskor. Nézzük meg, hogyan működik ez a gyakorlatban.
 
-A korábbi naplózási [példából](./naplozas-adatbazisba-serilog-hasznalataval) indulok ki, ahol egy egyszerű ASP.NET Core Web API projektben Serilogot használtunk naplózásra. Ehhez adtam hozzá scope-okat (rögtön kettőt), hogy azonnal lássuk, milyen hatása van az egymásba ágyazott hatóköröknek.
+A korábbi naplózási [példából](https://dotnetsziget.dev/posts/naplozas-adatbazisba-serilog-hasznalataval) indulok ki, ahol egy egyszerű ASP.NET Core Web API példában Serilogot használtunk naplózásra. Ehhez adtam hozzá scope-okat (rögtön kettőt), hogy azonnal lássuk, milyen hatása van az egymásba ágyazott hatóköröknek.
 
 ``` csharp
+Log.Logger = new LoggerConfiguration()
+        .ReadFrom.Configuration(builder.Configuration)
+        .CreateLogger();
+
 app.MapGet("/weatherforecast", (ILogger<Program> logger) =>
 {
     var forecast = Enumerable.Range(1, 5).Select(index =>
