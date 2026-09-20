@@ -15,14 +15,12 @@ tags:
   - "Caddy"
 ---
 
-## Local LLM környezet kialakítása
-
-### Háttértörténet
+## Háttértörténet
 
 Úgy alakult, hogy hozzám került egy HP EliteBook 840 G7 i5-10310U processzorral és 32 GB memóriával.
 Ez a gép kicsi és nem fogyaszt sokat, ezért arra gondoltam, megpróbálok valamilyen lokális LLM-futtatókörnyezetet összerakni rajta, hogy legyen egy kis játszóterem a különböző AI-os kísérletekhez.
 
-### A kezdetek
+## A kezdetek
 
 Mivel a jövőben még változhat, hogy pontosan mit szeretnék használni, egy Docker-alapú környezet mellett döntöttem.
 
@@ -122,7 +120,7 @@ A WSL számára elérhető memóriát 24 GB-ra emeltem, mert alapértelmezetten 
 
 Ezzel az alap környezet készen is van.
 
-### Modellválasztás
+## Modellválasztás
 
 A RAG-kísérletekhez szükségem lesz egy embedding modellre is. Erre az EmbeddingGemmát választottam.
 
@@ -147,7 +145,7 @@ docker exec local-ollama ollama pull embeddinggemma
 docker exec local-ollama ollama pull gemma4:e4b-it-qat
 ```
 
-### Local LLM próba
+## Local LLM próba
 
 Nem maradt más hátra, mint tesztelni. C# kóddal fogom kipróbálni és a Microsoft Agent Framework és az OllamaSharp csomagot fogom használni. A teszt kedvéért limitálom a válasz maximális méretét, és kikapcsolom a thinking módot is.
 
