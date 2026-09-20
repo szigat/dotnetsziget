@@ -2,7 +2,7 @@
 title: "Fluent Assertions - Assertion Scope használata"
 description: 'Bizonyos teszteknél előfordul, hogy sok állítás/ellenőrzés található ezeknek a végén és probléma esetén ilyenkor nem látjuk valójában mennyit rontottunk. Ebben segíthet az Assertion Scope használata'
 slug: fluent-assertions-assertion-scope-hasznalata
-pubDatetime: 2021-01-10
+pubDatetime: 2021-01-10T00:00:00+01:00
 featured: false
 draft: false
 author: Szigi

@@ -2,7 +2,7 @@
 category: csharp
 description: 'Autofac egyik képessége, hogy magától tudja a decorator osztályokat kezelni. Az említett verzió viszont rendelkezik egy hibával.'
 slug: autofac-5-1-x-es-decorator-problema
-pubDatetime: 2020-12-13
+pubDatetime: 2020-12-13T00:00:00+01:00
 featured: false
 draft: false
 author: Szigi

@@ -2,7 +2,7 @@
 title: "Teszt példányok előállítása (AutoFixture, Bogus, NBuilder) alapok"
 description: 'Minden fejlesztő eljut oda, hogy egy funkció tesztelésekor jól jönne egy adag példány egy, vagy több osztályból.'
 slug: teszt-peldanyok-eloallitasa-autofixture-bogus-nbuilder-alapok
-pubDatetime: 2021-01-02
+pubDatetime: 2021-01-02T00:00:00+01:00
 featured: false
 draft: false
 author: Szigi

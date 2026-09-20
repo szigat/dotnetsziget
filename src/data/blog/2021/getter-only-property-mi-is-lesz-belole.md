@@ -1,7 +1,7 @@
 ---
 title: "Getter only property - Mi lesz belőle?"
 description: ''
-pubDatetime: 2021-02-09
+pubDatetime: 2021-02-09T00:00:00+01:00
 slug: getter-only-property-mi-is-lesz-belole
 featured: false
 draft: false

@@ -2,7 +2,7 @@
 title: "ILogger scope és Serilog kapcsolata"
 slug: ilogger-scope-serilog-kapcsolata
 description: 'Megnézzük, hogyan kezeli a Serilog az ILogger scope-okat: megjelenítés konzolon, mentés SQL Serverbe, és a BeginScope() state típusainak hatása a log eventre.'
-pubDatetime: 2026-02-21T14:00:00
+pubDatetime: 2026-02-21T14:00:00+01:00
 featured: false
 draft: false
 author: Szigi

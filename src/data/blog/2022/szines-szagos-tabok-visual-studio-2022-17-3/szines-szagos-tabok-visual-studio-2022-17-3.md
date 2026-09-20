@@ -2,7 +2,7 @@
 title: "Színes-szagos tabok - Visual Studio 2022 (17.3)"
 description: 'A Visual Studio 2022 képességei folyamatosan fejlődnek, még az olyan apró részén is mint a tabok. Alapértelmezetten szürke egy sorban elhelyezkedő füleket láthatunk, a végén egy kis lenyílóval. Ez teljesen jól működő megoldás, de van lehetőségünk kicsit személyre szabni. A sor végén található egy fogaskerék is, amire kattintva feljön egy menü innen rögtön könnyedén színezhetjük...'
 slug: szines-szagos-tabok-visual-studio-2022-17-3
-pubDatetime: 2022-08-23
+pubDatetime: 2022-08-23T00:00:00+02:00
 featured: false
 draft: false
 author: Szigi

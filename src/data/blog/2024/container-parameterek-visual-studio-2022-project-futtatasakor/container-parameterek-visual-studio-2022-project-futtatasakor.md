@@ -1,7 +1,7 @@
 ---
 title: "Container paraméterek Visual Studio 2022 project futtatásakor"
 description: 'A Visual Studio 2022 segítségével könnyen készíthetünk docker filet ASP .NET Core alkalmazásunkhoz. A futtatás során van lehetőség egyedi docker run paraméterek átadására.'
-pubDatetime: 2024-03-09
+pubDatetime: 2024-03-09T00:00:00+01:00
 slug: container-parameterek-visual-studio-2022-project-futtatasakor
 category: "asp net"
 featured: false

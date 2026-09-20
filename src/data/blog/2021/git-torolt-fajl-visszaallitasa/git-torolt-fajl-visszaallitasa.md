@@ -2,7 +2,7 @@
 title: "Git - törölt fájl visszaállítása"
 description: 'Egy törölt fájl visszaállítását mutatom most be Git verziókezelő segítségével.'
 slug: git-torolt-fajl-visszaallitasa
-pubDatetime: 2021-09-26
+pubDatetime: 2021-09-26T00:00:00+02:00
 featured: false
 draft: false
 author: Szigi
