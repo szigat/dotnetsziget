@@ -2,7 +2,7 @@
 category: csharp
 description: 'C# 8 óta van lehetőség nullable reference type-ok használatára. Először is engedélyeznünk kell a projekten ezt a lehetőséget.'
 slug: nullable-reference-type-engedelyezese-projektben
-pubDatetime: 2021-07-06T00:00:00.000Z
+pubDatetime: 2021-07-06T00:00:00+02:00
 featured: false
 draft: false
 author: Szigi

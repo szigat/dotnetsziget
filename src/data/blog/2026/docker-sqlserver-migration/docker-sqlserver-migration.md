@@ -2,7 +2,7 @@
 title: "Containerben futó SQL Server migrálása"
 slug: containerben-futo-sql-server-migralasa
 description: 'SQL Server 2019 -> 2022 frissítés Docker Compose-ban bind mountolt data mappával: mentés, image csere, indítás és ellenőrzés.'
-pubDatetime: 2026-01-26T22:12:00
+pubDatetime: 2026-01-26T22:12:00+01:00
 featured: false
 draft: false
 author: Szigi

@@ -2,7 +2,7 @@
 title: "Entity Framework Core 6 - DateOnly, TimeOnly"
 description: 'Entity Framework Core 6 - DateOnly, TimeOnly tárolása SQL Serveren'
 slug: entity-framework-core-6-dateonly-timeonly
-pubDatetime: 2022-02-23
+pubDatetime: 2022-02-23T00:00:00+01:00
 featured: false
 draft: false
 author: Szigi

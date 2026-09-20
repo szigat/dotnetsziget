@@ -2,7 +2,7 @@
 title: "Web API - .NET 5-ről .NET 6-ra átállás"
 description: 'ASP .NET Core Web API - .NET 5-ről .NET 6-ra átállás bemutatása. Megnézzük milyen egyszerű is ezt meglépni valójában.'
 slug: web-api-net-5-rol-net-6-ra-atallas
-pubDatetime: 2021-12-01
+pubDatetime: 2021-12-01T00:00:00+01:00
 featured: false
 draft: false
 author: Szigi

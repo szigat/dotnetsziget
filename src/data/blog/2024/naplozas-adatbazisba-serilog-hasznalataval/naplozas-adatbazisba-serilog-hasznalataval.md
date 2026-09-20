@@ -2,7 +2,7 @@
 title: "Naplózás Adatbázisba Serilog használatával"
 description: 'Ebben az írásban MSSQL adatbázisba történő naplózás konfigurálását mutatom be Serilog használatával.'
 slug: naplozas-adatbazisba-serilog-hasznalataval
-pubDatetime: 2024-07-27
+pubDatetime: 2024-07-27T00:00:00+02:00
 category: "csharp"
 tags: 
   - "ASP .NET Core"

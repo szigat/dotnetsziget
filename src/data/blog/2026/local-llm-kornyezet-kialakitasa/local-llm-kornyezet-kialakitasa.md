@@ -2,7 +2,7 @@
 title: "Local LLM környezet kialakítása"
 slug: local-llm-kornyezet-kialakitasa
 description: 'Local LLM környezetet építek egy HP EliteBookon Docker, Ollama és Caddy segítségével, majd C#-ból a Microsoft Agent Frameworkkel próbálom ki a lokálisan futó modelleket.'
-pubDatetime: 2026-09-20T16:10:00
+pubDatetime: 2026-09-20T16:10:00+02:00
 featured: false
 draft: false
 author: Szigi
@@ -11,7 +11,6 @@ tags:
   - "LLM"
   - "AI"
   - "csharp"
-  - "C#"
   - "Ollama"
   - "Caddy"
 ---

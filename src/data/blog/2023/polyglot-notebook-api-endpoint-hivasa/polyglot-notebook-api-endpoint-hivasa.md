@@ -2,7 +2,7 @@
 title: "Polyglot notebook - API endpoint hívása"
 description: 'A .NET Interactive-nak köszönhetően Polyglot notebook kódblokkjaiban lehet C# nyelvet választani.'
 slug: polyglot-notebook-api-endpoint-hivasa
-pubDatetime: 2023-06-29
+pubDatetime: 2023-06-29T00:00:00+02:00
 category: "csharp"
 featured: false
 draft: false

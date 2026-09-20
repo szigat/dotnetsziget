@@ -2,7 +2,7 @@
 title: "SonarQube helyben docker segítségével"
 description: 'A SonarQube egy kód ellenőrző eszköz, amit van lehetőség konténerből is futtatni lokálisan. Ez azért is lehet, hasznos, mert ha éppen nincs rá szükségünk könnyedén lekapcsolhatjuk.'
 slug: sonarqube-helyben-docker-segitsegevel
-pubDatetime: 2023-03-13
+pubDatetime: 2023-03-13T00:00:00+01:00
 category: 'docker'
 featured: false
 draft: false

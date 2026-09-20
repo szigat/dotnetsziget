@@ -2,7 +2,7 @@
 title: "Attól, hogy console még lehet szép! Spectre Console"
 description: 'A console alkalmazások továbbra is a hétköznapjaink részét képezik. Ezek különböző feladatot látnak el és megjelenítésük is lehet esztétikus.'
 slug: attol-hogy-console-meg-lehet-szep
-pubDatetime: 2021-09-13
+pubDatetime: 2021-09-13T00:00:00+02:00
 featured: false
 draft: false
 author: Szigi

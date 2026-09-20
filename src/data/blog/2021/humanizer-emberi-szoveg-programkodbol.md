@@ -2,7 +2,7 @@
 title: "Humanizer - emberi szöveg programkódból"
 description: 'A humanizer egy olyan csomag, amivel könnyedén manipulálhatjuk bizonyos értékeinket, illetve azok megjelenítését.'
 slug: humanizer-emberi-szoveg-programkodbol
-pubDatetime: 2021-06-10
+pubDatetime: 2021-06-10T00:00:00+02:00
 featured: false
 draft: false
 author: Szigi

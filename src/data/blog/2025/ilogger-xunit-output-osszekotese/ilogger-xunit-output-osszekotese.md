@@ -2,7 +2,7 @@
 title: "ILogger és xUnit output összekötése egyszerűen"
 slug: ilogger-xunit-output-osszekotese
 description: 'Megnézzük, hogyan integrálhatod az ILogger naplózást az xUnit tesztekbe, hogy a logok megjelenjenek a teszteredmények között.'
-pubDatetime: 2025-06-22T22:12:00
+pubDatetime: 2025-06-22T22:12:00+02:00
 featured: false
 draft: false
 author: Szigi
